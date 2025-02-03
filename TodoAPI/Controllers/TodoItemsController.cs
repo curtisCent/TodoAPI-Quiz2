@@ -22,6 +22,9 @@ namespace TodoAPI.Controllers
             {
                 _context.TodoItems.Add(new TodoItem { Name="Lab1", IsComplete=true});
                 _context.TodoItems.Add(new TodoItem { Name="Lab2",IsComplete=false});
+                //Added items
+                _context.TodoItems.Add(new TodoItem { Name = "An extra Item", IsComplete = true });
+                _context.TodoItems.Add(new TodoItem { Name = "Curtis Carpio", IsComplete = false });
             }
 
             _context.SaveChanges();
